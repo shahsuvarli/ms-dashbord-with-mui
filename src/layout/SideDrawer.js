@@ -7,7 +7,7 @@ import {
   List,
   Typography,
   Avatar,
-  Box,
+  // Box,
 } from "@material-ui/core";
 
 // icons & images
@@ -17,7 +17,7 @@ import { ImPieChart } from "react-icons/im";
 import { FaUserFriends, FaUserPlus } from "react-icons/fa";
 import { GiHazardSign } from "react-icons/gi";
 import {
-  RiShoppingBag3Fill,
+  // RiShoppingBag3Fill,
   RiClipboardFill,
   RiLoginCircleFill,
 } from "react-icons/ri";
@@ -55,46 +55,46 @@ const ListStyle = styled(List)(({ theme }) => ({
   marginTop: theme.spacing(2),
 }));
 
-const GetMoreStyle = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.gray.lighter,
-  margin: "40px 12px 16px",
-  padding: "60px 12px 14px 12px",
-  borderRadius: theme.spacing(1.5),
-  textAlign: "center",
-  position: "relative",
+// const GetMoreStyle = styled(Box)(({ theme }) => ({
+//   backgroundColor: theme.palette.gray.lighter,
+//   margin: "40px 12px 16px",
+//   padding: "60px 12px 14px 12px",
+//   borderRadius: theme.spacing(1.5),
+//   textAlign: "center",
+//   position: "relative",
 
-  "& img": {
-    position: "absolute",
-    top: 0,
-    left: "50%",
-    width: theme.spacing(12.5),
-    transform: "translate(-40%, -40%)",
-    transition: "all 0.3s ease-in",
-  },
-  "& h5": {
-    margin: "10px 0",
-  },
-  "& a": {
-    textDecoration: "none",
-    fontWeight: 500,
-    color: theme.palette.common.white,
-    backgroundColor: theme.palette.green.darker,
-    display: "block",
-    padding: "6px",
-    borderRadius: "inherit",
-    transition: "background 0.3s ease-in",
-    boxShadow: "0px 5px 5px white",
-    "&:hover": {
-      backgroundColor: theme.palette.green.dark,
-    },
-  },
+//   "& img": {
+//     position: "absolute",
+//     top: 0,
+//     left: "50%",
+//     width: theme.spacing(12.5),
+//     transform: "translate(-40%, -40%)",
+//     transition: "all 0.3s ease-in",
+//   },
+//   "& h5": {
+//     margin: "10px 0",
+//   },
+//   "& a": {
+//     textDecoration: "none",
+//     fontWeight: 500,
+//     color: theme.palette.common.white,
+//     backgroundColor: theme.palette.green.darker,
+//     display: "block",
+//     padding: "6px",
+//     borderRadius: "inherit",
+//     transition: "background 0.3s ease-in",
+//     boxShadow: "0px 5px 5px white",
+//     "&:hover": {
+//       backgroundColor: theme.palette.green.dark,
+//     },
+//   },
 
-  "&:hover": {
-    "& img": {
-      transform: "translate(-40%, -50%)",
-    },
-  },
-}));
+//   "&:hover": {
+//     "& img": {
+//       transform: "translate(-40%, -50%)",
+//     },
+//   },
+// }));
 
 // links for the side nav
 const links = [
@@ -108,7 +108,7 @@ const links = [
     id: "L1",
     path: "/user",
     icon: <FaUserFriends />,
-    title: "Members",
+    title: "Team",
   },
   // {
   //   id: "L2",

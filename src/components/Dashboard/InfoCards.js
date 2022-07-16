@@ -11,7 +11,7 @@ import InfoCard from "./InfoCard";
 // } from "react-icons/ai";
 import {MdAttachMoney} from 'react-icons/md'
 import {RiPercentLine} from 'react-icons/ri'
-import {BsFillPersonFill} from 'react-icons/bs'
+import {FaUserFriends} from 'react-icons/fa'
 
 
 
@@ -30,7 +30,7 @@ const items = [
     count: "19.8%",
     title: "ROTCE",
   },
-  { id: "maroon", icon: <BsFillPersonFill />, count: "75.0k", title: "Employees" },
+  { id: "maroon", icon: <FaUserFriends />, count: "75.0k", title: "Employees" },
 ];
 
 const ContainerStyle = styled(Box)(({ theme }) => ({
