@@ -1,6 +1,4 @@
 import { Link as RouterLink } from "react-router-dom";
-//import { styled } from "@material-ui/styles";
-import { Box, Button, Divider } from "@material-ui/core";
 import DashCard from "./DashCard";
 import DashCardHeader from "./DashCardHeader";
 
@@ -12,6 +10,7 @@ import coverImg_3 from "../../images/newsList/cover_3.jpg";
 import coverImg_4 from "../../images/newsList/cover_4.jpg";
 import coverImg_5 from "../../images/newsList/cover_5.jpg";
 import NewsUpdateItem from "./NewsUpdateItem";
+import { Box, Button, Divider } from "@material-ui/core";
 
 // News List
 // const loremText = `Quisquam sunt ipsa nihil ratione. Dolorum earum occaecati et sequi et eius asperiore...`;
@@ -19,33 +18,39 @@ import NewsUpdateItem from "./NewsUpdateItem";
 const newsList = [
   {
     title: "Executive Women's Conference",
-    subtitle: 'Learn how women are shaking up boardrooms and investing in the metaverse, from the firm’s Executive Women’s Conference.',
+    subtitle:
+      "Learn how women are shaking up boardrooms and investing in the metaverse, from the firm’s Executive Women’s Conference.",
     photo: coverImg_1,
-    postingTime: "about 12 hours",
+    postingTime: "2 hours ago",
   },
   {
     title: "2022 Midyear Outlook: What's Ahead for Markets?",
-    subtitle: 'Headwinds from inflation, central bank tightening, supply chain disruption and COVID-19 will continue to pressure growth in 2022.',
+    subtitle:
+      "Headwinds from inflation, central bank tightening, supply chain disruption and COVID-19 will continue to pressure growth in 2022.",
     photo: coverImg_2,
-    postingTime: "about 2 hours",
+    postingTime: "2 hours ago",
   },
   {
-    title: "Our Future Generation Scholarship Program Welcomes Its Initial Cohort",
-    subtitle: 'We celebrate the first participants in our program designed to help young people from diverse backgrounds in the U.K. pursue careers in the financial industry.',
+    title:
+      "Our Future Generation Scholarship Program Welcomes Its Initial Cohort",
+    subtitle:
+      "We celebrate the first participants in our program designed to help young people from diverse backgrounds in the U.K. pursue careers in the financial industry.",
     photo: coverImg_3,
-    postingTime: "about 7 hours",
+    postingTime: "7 hours ago",
   },
   {
     title: "Midterm Elections: 4 Areas to Watch ",
-    subtitle: 'What the 2022 midterm election outcome could mean for equities and how investors can benefit from bipartisanship. ',
+    subtitle:
+      "What the 2022 midterm election outcome could mean for equities and how investors can benefit from bipartisanship. ",
     photo: coverImg_4,
-    postingTime: "about 12 hours",
+    postingTime: "10 hours ago",
   },
   {
     title: "Breaking Down Gatekeeping in the World of Publishing",
-    subtitle: 'Khalisa Rae and Dawn Michelle Hardy speak about the barriers that exist for authors of color to publish their work and how to best navigate the historically white publishing industry.',
+    subtitle:
+      "Khalisa Rae and Dawn Michelle Hardy speak about the barriers that exist for authors of color to publish their work and how to best navigate the historically white publishing industry.",
     photo: coverImg_5,
-    postingTime: "about 10 hours",
+    postingTime: "12 hours ago",
   },
 ];
 

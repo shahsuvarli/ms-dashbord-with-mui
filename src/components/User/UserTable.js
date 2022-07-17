@@ -27,7 +27,7 @@ const TableStyle = styled(Table)(({ theme }) => ({
     color: theme.palette.common.white,
   },
   "& .activeText": {
-    backgroundColor: theme.palette.green.darker,
+    backgroundColor: theme.palette.green.dark,
   },
   "& .bannedText": {
     backgroundColor: theme.palette.error.light,
@@ -35,7 +35,7 @@ const TableStyle = styled(Table)(({ theme }) => ({
 
   // selected tableRow desing
   "& .MuiTableRow-root.Mui-selected": {
-    backgroundColor: theme.palette.green.lighter,
+    backgroundColor: theme.palette.blue.light,
   },
 
   // checkbox style
@@ -46,7 +46,7 @@ const TableStyle = styled(Table)(({ theme }) => ({
     color: theme.palette.success.main,
   },
   "& .MuiIconButton-colorPrimary:hover": {
-    backgroundColor: theme.palette.green.lighter,
+    backgroundColor: theme.palette.blue.light,
   },
 }));
 
@@ -140,9 +140,9 @@ const UserTable = () => {
 
   // active/ banned
   const StatusText = ({ text }) => {
-    if (text === "Active") {
+    if (text === "Free") {
       return <span className="statusText activeText">{text}</span>;
-    } else if (text === "Banned") {
+    } else if (text === "Busy") {
       return <span className="statusText bannedText">{text}</span>;
     } else {
       return { text };

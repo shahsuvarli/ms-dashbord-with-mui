@@ -39,7 +39,7 @@ const ContentBoxStyle = styled(Box)(({ theme }) => ({
     color: theme.palette.success.main,
   },
   "& .MuiIconButton-colorSecondary:hover": {
-    backgroundColor: theme.palette.green.lighter,
+    backgroundColor: theme.palette.blue.light,
   },
 }));
 

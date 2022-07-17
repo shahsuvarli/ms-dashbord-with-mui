@@ -35,10 +35,9 @@ const useStyles = makeStyles((theme) => ({
 
 const StyledMenu = withStyles((theme) => ({
   paper: {
-    maxWidth: '300px',
+    maxWidth: "300px",
     width: "90%",
-    boxShadow: `0 2px 10px -5px ${theme.palette.green.darker}`,
-
+    boxShadow: `0 2px 10px -5px ${theme.palette.blue.dark}`,
   },
 }))((props) => (
   <Menu
@@ -118,7 +117,7 @@ const UserMenu = (props) => {
         aria-haspopup="true"
         onClick={props.onOpen}
       >
-        <Avatar src={userAvatar} alt="User Name">
+        <Avatar src={"https://i.ibb.co/GV4pCwH/IMG-4973-1.png"} alt="User Name">
           JD
         </Avatar>
       </AvatarButtonStyle>

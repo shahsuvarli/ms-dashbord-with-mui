@@ -26,7 +26,7 @@ const BoxStyle = styled(Box)(({ theme }) => ({
     objectFit: "cover",
   },
   "& .MuiButton-root": {
-    backgroundColor: theme.palette.green.darker,
+    backgroundColor: theme.palette.blue.dark,
     color: "#fff",
     marginTop: 40,
   },

@@ -16,39 +16,42 @@ const DivStyle = styled(Box)(({ theme }) => ({
 const SERIES_DATA = [
   {
     name: "Series 1",
-    data: [80, 50, 30, 40, 100, 20],
+    // data: [80, 50, 30, 40, 100, 20],
+    data: [80, 50, 30],
   },
   {
     name: "Series 2",
-    data: [20, 30, 40, 80, 20, 80],
+    // data: [20, 30, 40, 80, 20, 80],
+    data: [20, 30, 40],
   },
   {
     name: "Series 3",
-    data: [44, 76, 78, 13, 43, 10],
+    // data: [44, 76, 78, 13, 43, 10],
+    data: [44, 76, 78],
   },
 ];
 
 const ChartCurrentSubject = () => {
   const chartOptions = {
-    chart: { toolbar: { show: false } },
+    chart: { toolbar: { show: true } },
     stroke: { width: 2 },
     legend: {
       position: "bottom",
       horizontalAlign: "center",
     },
-    markers: { size: 0 },
+    markers: { size: 3 },
     xaxis: {
       categories: [
         "English",
         "History",
         "Physics",
-        "Geography",
-        "Chinese",
-        "Math",
+        // "Geography",
+        // "Chinese",
+        // "Math",
       ],
     },
     fill: {
-      opacity: 0.5,
+      opacity: 0.3,
     },
   };
 

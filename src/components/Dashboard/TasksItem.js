@@ -10,14 +10,14 @@ const TasksItem = ({ id, status, label }) => {
   const FormControlLabelStyle = styled(FormControlLabel)(({ theme }) => ({
     "& .MuiCheckbox-root": {
       transition: "all 0.5s ease",
-      color: theme.palette.success.main,
+      color: theme.palette.blue.dark,
       "&:hover": {
-        backgroundColor: theme.palette.green.lighter,
+        backgroundColor: theme.palette.blue.light,
       },
     },
 
     "& .Mui-checked	": {
-      color: `${theme.palette.green.darker} !important`,
+      color: `${theme.palette.blue.dark} !important`,
     },
 
     "& .MuiFormControlLabel-label": {

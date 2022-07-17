@@ -54,7 +54,10 @@ const CurrentVisits = () => {
 
   return (
     <DashCard>
-      <DashCardHeader title="Net Revenues (FY2021)" />
+      <DashCardHeader
+        title="Net revenues (FY 2021)"
+        subheader="in billion dollars"
+      />
 
       <DivStyle>
         <ReactApexChart

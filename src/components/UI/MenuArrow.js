@@ -6,7 +6,7 @@ const Arrow = styled(StopSharp)(({ theme }) => ({
   right: theme.spacing(1.75),
   position: "absolute",
   transform: "rotate(45deg)",
-  color: theme.palette.green.darker,
+  color: theme.palette.blue.dark,
 }));
 
 const MenuArrow = () => <Arrow />;

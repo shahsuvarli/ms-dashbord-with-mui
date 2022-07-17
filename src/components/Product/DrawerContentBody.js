@@ -25,7 +25,7 @@ const ButtonStyle = styled(Button)(({ theme }) => ({
   },
 
   "&:hover": {
-    backgroundColor: theme.palette.green.lighter,
+    backgroundColor: theme.palette.blue.light,
     opacity: 0.5,
   },
 }));

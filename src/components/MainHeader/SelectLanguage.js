@@ -16,7 +16,7 @@ import FR_Flag from "../../images/ic_flag_fr.svg";
 const StyledMenu = withStyles((theme) => ({
   paper: {
     minWidth: 175,
-    boxShadow: `0 2px 10px -5px ${theme.palette.green.darker}`,
+    boxShadow: `0 2px 10px -5px ${theme.palette.blue.dark}`,
   },
 }))((props) => (
   <Menu
@@ -37,7 +37,7 @@ const StyledMenu = withStyles((theme) => ({
 const StyledMenuItem = withStyles((theme) => ({
   root: {
     "&:active": {
-      backgroundColor: theme.palette.green.light,
+      backgroundColor: theme.palette.blue.light,
     },
     "& .MuiListItemText-primary": {
       marginLeft: theme.spacing(2.5),

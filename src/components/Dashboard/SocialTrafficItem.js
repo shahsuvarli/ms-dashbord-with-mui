@@ -13,11 +13,11 @@ const SocialTrafficItem = ({ icon, amount, title }) => {
     justifyContent: "center",
     alignItems: "center",
 
-    "& .MuiTypography-h5": {
+    "& .MuiTypography-h4": {
       color:
         title === "Facebook"
           ? "rgb(24, 119, 242)"
-          : title === "Google"
+          : title === "YouTube"
           ? "rgb(223, 62, 48)"
           : title === "LinkedIn"
           ? "rgb(0, 96, 151)"
@@ -27,7 +27,7 @@ const SocialTrafficItem = ({ icon, amount, title }) => {
     },
 
     "& .MuiTypography-h6": {
-      fontSize: 20,
+      fontSize: 25,
       fontWeight: 600,
     },
     "& .MuiTypography-caption": {
@@ -37,7 +37,7 @@ const SocialTrafficItem = ({ icon, amount, title }) => {
 
   return (
     <BoxItemStyle>
-      <Typography variant="h5" component="h4">
+      <Typography variant="h4" component="h4">
         {icon}
       </Typography>
 

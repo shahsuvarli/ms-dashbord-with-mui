@@ -33,7 +33,7 @@ const NavDrawerStyle = styled("nav")(({ theme }) => ({
 }));
 
 const LogoStyle = styled(Typography)(({ theme }) => ({
-  color: theme.palette.green.darker,
+  color: theme.palette.blue.dark,
   margin: 0,
 }));
 
@@ -78,14 +78,14 @@ const ListStyle = styled(List)(({ theme }) => ({
 //     textDecoration: "none",
 //     fontWeight: 500,
 //     color: theme.palette.common.white,
-//     backgroundColor: theme.palette.green.darker,
+//     backgroundColor: theme.palette.blue.dark,
 //     display: "block",
 //     padding: "6px",
 //     borderRadius: "inherit",
 //     transition: "background 0.3s ease-in",
 //     boxShadow: "0px 5px 5px white",
 //     "&:hover": {
-//       backgroundColor: theme.palette.green.dark,
+//       backgroundColor: theme.palette.blue.dark,
 //     },
 //   },
 
@@ -117,8 +117,8 @@ const links = [
   //   title: "Product",
   // },
   { id: "L3", path: "/blog", icon: <RiClipboardFill />, title: "Blog" },
-  { id: "L4", path: "/login", icon: <RiLoginCircleFill />, title: "Login" },
-  { id: "L5", path: "/register", icon: <FaUserPlus />, title: "Register" },
+  // { id: "L4", path: "/login", icon: <RiLoginCircleFill />, title: "Login" },
+  // { id: "L5", path: "/register", icon: <FaUserPlus />, title: "Register" },
   { id: "L6", path: "/404", icon: <GiHazardSign />, title: "Not Found" },
 ];
 
@@ -134,7 +134,10 @@ const SideDrawer = (props) => {
 
       {/* User Card */}
       <UserCardStyle to="/" onClick={props.onClose}>
-        <Avatar src={userAvatar} alt="User Image" />
+        <Avatar
+          src={"https://i.ibb.co/GV4pCwH/IMG-4973-1.png"}
+          alt="User Image"
+        />
 
         <Typography variant="subtitle1" component="h3">
           Elvin Shahsuvarli

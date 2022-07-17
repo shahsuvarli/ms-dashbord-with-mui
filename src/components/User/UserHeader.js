@@ -19,7 +19,7 @@ const BoxStyle = styled(Box)(({ theme }) => ({
     fontSize: 10,
     fontWeight: 600,
     color: theme.palette.common.white,
-    backgroundColor: theme.palette.success.main,
+    backgroundColor: theme.palette.blue.dark,
     boxShadow: theme.shadows[5],
 
     "&:hover": {

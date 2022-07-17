@@ -40,7 +40,7 @@ const StyledMenu = withStyles((theme) => ({
     minWidth: 250,
     maxWidth: 400,
     width: "90%",
-    boxShadow: `0 2px 10px -5px ${theme.palette.green.darker}`,
+    boxShadow: `0 2px 10px -5px ${theme.palette.blue.dark}`,
   },
 }))((props) => (
   <Menu
@@ -75,13 +75,13 @@ const LinkStyle = styled(Link)(({ theme }) => ({
   display: "block",
   textAlign: "center",
   padding: theme.spacing(1),
-  color: theme.palette.green.dark,
+  color: theme.palette.blue.dark,
   fontSize: theme.spacing(2),
   fontWeight: 500,
   borderRadius: theme.spacing(0.75),
   transition: "background 0.25s ease-in",
   "&:hover": {
-    backgroundColor: theme.palette.green.light,
+    backgroundColor: theme.palette.blue.light,
     underline: "none",
   },
 }));
@@ -208,18 +208,18 @@ const Notifications = (props) => {
           </Typography>
         </BoxStyle>
 
-        <Divider />
+        <Divider/>
 
         {/* Unseen Notifications */}
-        <Typography
+        {/* <Typography
           variant="button"
           component="h4"
           className={classes.listHeader}
         >
           NEW
-        </Typography>
+        </Typography> */}
 
-        {unSeenNotifications.map((el) => (
+        {/* {unSeenNotifications.map((el) => (
           <MenuItemUnseenStyle key={el.id}>
             <MenuItemIconButtonStyle>{el.avatar}</MenuItemIconButtonStyle>
 
@@ -235,18 +235,18 @@ const Notifications = (props) => {
               </MenuItemTimeStampStyle>
             </Box>
           </MenuItemUnseenStyle>
-        ))}
+        ))} */}
 
         {/* Seen Notifications */}
-        <Typography
+        {/* <Typography
           variant="button"
           component="h4"
           className={classes.listHeader}
         >
           BEFORE THAT
-        </Typography>
+        </Typography> */}
 
-        {seenNotifications.map((el) => (
+        {/* {seenNotifications.map((el) => (
           <MenuItemSeenStyle key={el.id}>
             <MenuItemIconButtonStyle>{el.avatar}</MenuItemIconButtonStyle>
 
@@ -262,7 +262,7 @@ const Notifications = (props) => {
               </MenuItemTimeStampStyle>
             </Box>
           </MenuItemSeenStyle>
-        ))}
+        ))} */}
 
         <Divider />
 

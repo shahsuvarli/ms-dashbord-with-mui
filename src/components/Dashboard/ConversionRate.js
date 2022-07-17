@@ -5,32 +5,39 @@ import DashCardHeader from "./DashCardHeader";
 
 const SERIES_DATA = [
   {
-    data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380],
+    data: [
+      78.05, 78.05, 76.06, 86.14, 79.9, 86.66, 89.97, 100.96, 96.65, 93.36,
+      100.5, 95.16, 102.12,
+    ],
   },
 ];
 
 const chartOptions = {
-  chart: { toolbar: { show: false } },
+  chart: { toolbar: { show: true } },
   //markers: { show: false },
   xaxis: {
     categories: [
-      "Italy",
-      "Japan",
-      "China",
-      "Canada",
-      "France",
-      "Germany",
-      "South Korea",
-      "Netherlands",
-      "United States",
-      "United Kingdom",
+      "Jul 15, 2022",
+      "Jul 01, 2022",
+      "Jun 01, 2022",
+      "May 01, 2022",
+      "Apr 01, 2022",
+      "Mar 01, 2022",
+      "Feb 01, 2022",
+      "Jan 01, 2022",
+      "Dec 01, 2021",
+      "Nov 01, 2021",
+      "Oct 01, 2021",
+      "Sep 01, 2021",
+      "Aug 01, 2021",
+      "Jul 01, 2021",
     ],
   },
   plotOptions: {
     bar: {
       barHeight: "25%",
       borderRadius: 4,
-      horizontal: true,
+      horizontal: false,
       colors: {
         ranges: [
           {
@@ -44,10 +51,10 @@ const chartOptions = {
   tooltip: {
     marker: { show: false },
 
-    x: { show: false },
+    x: { show: true },
     y: {
       title: {
-        formatter: (sname) => `#${sname}`,
+        formatter: (sname) => `price (USD):`,
       },
     },
   },
@@ -56,17 +63,14 @@ const chartOptions = {
 const ConversionRate = () => {
   return (
     <DashCard>
-      <DashCardHeader
-        title="Conversion Rates"
-        subheader="(+43%) than last year"
-      />
+      <DashCardHeader title="Stock prices" subheader="last 12 month in USD" />
 
       <DashCardBox>
         <ReactApexChart
           type="bar"
           series={SERIES_DATA}
           options={chartOptions}
-          height={350}
+          height={300}
         />
       </DashCardBox>
     </DashCard>

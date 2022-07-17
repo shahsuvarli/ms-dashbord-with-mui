@@ -4,9 +4,9 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
   activeClass: {
-    color: `${theme.palette.green.darker} !important`,
-    backgroundColor: theme.palette.green.lighter,
-    borderRight: `3px solid ${theme.palette.green.darker}`,
+    color: `${theme.palette.blue.dark} !important`,
+    backgroundColor: theme.palette.blue.light,
+    borderRight: `3px solid ${theme.palette.blue.dark}`,
     "& .MuiTypography-subtitle1": {
       fontWeight: 600,
     },

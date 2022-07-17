@@ -6,22 +6,17 @@ import DashCardBox from "./DashCardBox";
 // chart data series
 const SERIES = [
   {
-    name: "Net revenues",
-    type: "column",
-    data: [
-      32.3, 26.18, 32.49, 34.28, 35.16, 34.63, 37.95, 40.11, 41.54, 48.76,
-      59.76,
-    ],
-  },
-  {
     name: "Net income",
     type: "area",
-    data: [4.65, 0.72, 3.61, 3.67, 6.28, 6.12, 6.22, 8.88, 9.24, 11.18, 15.12],
+    data: [4645, 716, 3613, 3667, 6279, 6123, 6216, 8883, 4721, 7111, 9068],
   },
   {
-    name: "Team C",
-    type: "line",
-    data: [4.99, 4.76, 5.25, 5.95, 5.59, 4.93, 6, 6.48, 6.16, 7.67, 10.99],
+    name: "Net revenues",
+    type: "area",
+    data: [
+      32304, 26178, 32493, 34275, 35155, 34631, 37945, 40107, 41538, 48757,
+      59755,
+    ],
   },
 ];
 
@@ -31,7 +26,7 @@ const ChartSiteVisits = () => {
       id: "basic-bar",
       stacked: false,
       toolbar: {
-        show: false,
+        show: true,
       },
     },
     plotOptions: {
@@ -40,8 +35,8 @@ const ChartSiteVisits = () => {
         borderRadius: 4,
       },
     },
-    stroke: { curve: "smooth", width: [0, 2, 3] },
-    markers: { size: 0 },
+    stroke: { curve: "smooth", width: [5, 5] },
+    markers: { size: 5 },
     fill: {
       opacity: [0.85, 0.25, 1],
       gradient: {
@@ -72,10 +67,9 @@ const ChartSiteVisits = () => {
     tooltip: {
       shared: true,
       intersect: false,
-      x: { show: false },
+      x: { show: true },
       y: {
-        formatter: (val) =>
-          val !== undefined ? `${val.toFixed(0)} visits` : val,
+        formatter: (val) => (val !== undefined ? `${val.toFixed(0)} m` : val),
       },
       style: {
         fontFamily: "inherit",
@@ -83,19 +77,19 @@ const ChartSiteVisits = () => {
     },
     legend: {
       position: "top",
-      horizontalAlign: "right",
+      horizontalAlign: "left",
     },
   };
 
   return (
     <DashCard>
       <DashCardHeader
-        title="Website Visits"
-        subheader="(+43%) than last year"
+        title="Net income/revenues (2011-2021)"
+        subheader="in million dollars"
       />
 
       <DashCardBox>
-        <Chart options={options} series={SERIES} type="line" height={300} />
+        <Chart options={options} series={SERIES} type="line" height={280} />
       </DashCardBox>
     </DashCard>
   );

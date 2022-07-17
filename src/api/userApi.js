@@ -9,7 +9,7 @@ function createData(name, company, role, verified, status) {
 }
 
 // helper const
-const [yes, no, banned, active] = ["Yes", "No", "Banned", "Active"];
+const [yes, no, banned, active] = ["Yes", "No", "Busy", "Free"];
 const [uxd, uud, fsd, bd, pm, fed] = [
   "UX Designer",
   "UI/UX Designer",

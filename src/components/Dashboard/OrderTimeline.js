@@ -18,28 +18,28 @@ const TimelineStyle = styled(Timeline)(({ theme }) => ({
 // timeline list
 const timelineList = [
   {
-    title: "1983, orders, $4220",
-    time: "08 Aug 2021 21:53",
+    title: "Do the Right Thing",
+    time: "Act with integrity",
     type: "order1",
   },
   {
-    title: "12 Invoices have been paid",
-    time: "29 Jun 2021 08:40",
+    title: "Put Clients First",
+    time: "Keep the client's interests first",
     type: "order2",
   },
   {
-    title: "Order #37745 from September",
-    time: "02 Aug 2021 04:21",
+    title: "Lead with Exceptional Ideas",
+    time: "Win by breaking new ground",
     type: "order3",
   },
   {
-    title: "New order placed #XF-2356",
-    time: "18 Apr 2021 21:51",
+    title: "Commit to Diversity & Inclusion",
+    time: "Value individual and cultural differences as a defining strength",
     type: "order4",
   },
   {
-    title: "New order placed #XF-2346",
-    time: "03 Oct 2020 04:27",
+    title: "Give Back",
+    time: "Serve our communities generously with our expertise, time and money",
     type: "order5",
   },
 ];
@@ -47,7 +47,7 @@ const timelineList = [
 const OrderTimeline = () => {
   return (
     <DashCard>
-      <DashCardHeader title="Order Timeline" />
+      <DashCardHeader title="Core values" />
 
       <TimelineStyle>
         {timelineList.map((item, index) => (

@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@material-ui/core";
 import { styled } from "@material-ui/styles";
 import { Helmet } from "react-helmet";
-import ChartCurrentSubject from "../components/Dashboard/ChartCurrentSubject";
+// import ChartCurrentSubject from "../components/Dashboard/ChartCurrentSubject";
 import ChartSiteVisits from "../components/Dashboard/ChartSiteVisits";
 import ConversionRate from "../components/Dashboard/ConversionRate";
 import CurrentVisits from "../components/Dashboard/CurrentVisits";
@@ -25,7 +25,7 @@ const Dashboard = () => {
       </Helmet>
 
       <Typography variant="h6" component="h2">
-        Hi, Welcome to FY 2021 Dashboard.
+        Hi, Welcome Dashboard!
       </Typography>
 
       {/* Info Cards */}
@@ -43,14 +43,14 @@ const Dashboard = () => {
         </Grid>
 
         {/* Conversion Rates */}
-        <Grid item xs={12} md={6} lg={8}>
+        <Grid item xs={12} md={6} lg={12}>
           <ConversionRate />
         </Grid>
 
         {/* Current Subject */}
-        <Grid item xs={12} md={6} lg={4}>
+        {/* <Grid item xs={12} md={6} lg={4}>
           <ChartCurrentSubject />
-        </Grid>
+        </Grid> */}
 
         {/* News Update */}
         <Grid item xs={12} md={6} lg={8}>

@@ -14,7 +14,7 @@ const TableToolbar = ({ numSelected }) => {
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
     borderRadius: "8px 8px 0 0",
-    backgroundColor: numSelected > 0 ? theme.palette.green.light : "inherit",
+    backgroundColor: numSelected > 0 ? theme.palette.blue.light : "inherit",
 
     display: "flex",
     justifyContent: "space-between",
@@ -40,7 +40,7 @@ const TableToolbar = ({ numSelected }) => {
     "& .selectedText": {
       fontSize: 18,
       fontWeight: numSelected > 0 ? 500 : 400,
-      color: numSelected > 0 ? theme.palette.green.dark : "inherit",
+      color: numSelected > 0 ? theme.palette.blue.dark : "inherit",
     },
   }));
 
