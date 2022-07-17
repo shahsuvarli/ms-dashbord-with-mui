@@ -55,7 +55,7 @@ const IntroModal = ({ showModal, onToggle }) => {
             underline="none"
             variant="contained"
             disableElevation
-            href="https://github.com/TutulDevs/mui-practice"
+            href="https://github.com/shahsuvarli/ms-dashbord-with-mui"
             target="_blank"
             rel="noopener noreferrer"
           >
